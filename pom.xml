@@ -358,10 +358,10 @@
                 <version>3.4.1</version>
                 <configuration>
                     <mainClass>com.skindetection.Main</mainClass>
-                    <options>
-                        <option>-Xmx4g</option>
-                        <option>-Dfile.encoding=UTF-8</option>
-                    </options>
+<!--                    <options>-->
+<!--                        <option>-Xmx4g</option>-->
+<!--                        <option>-Dfile.encoding=UTF-8</option>-->
+<!--                    </options>-->
                 </configuration>
             </plugin>
 
