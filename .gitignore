@@ -1,0 +1,398 @@
+# =================================================================
+# 선정성 탐지 최적화 프로그램 Git 무시 파일
+# =================================================================
+
+# =================================================================
+# Java 관련
+# =================================================================
+# 컴파일된 클래스 파일
+*.class
+
+# 로그 파일
+*.log
+
+# BlueJ 파일
+*.ctxt
+
+# 모바일 도구 (J2ME)
+.mtj.tmp/
+
+# 패키지 파일
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# JVM 크래시 로그
+hs_err_pid*
+replay_pid*
+
+# =================================================================
+# Maven 관련
+# =================================================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# =================================================================
+# IDE 관련
+# =================================================================
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# =================================================================
+# 운영체제 관련
+# =================================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =================================================================
+# 프로젝트 특정 파일들
+# =================================================================
+
+# AI 모델 파일 (용량이 크므로 별도 관리)
+models/*.onnx
+models/*.pt
+models/*.pth
+models/*.pb
+models/*.tflite
+models/*.h5
+models/*.pkl
+
+# 모델 파일 제외 예외 (작은 테스트 모델은 포함 가능)
+!models/test_*.onnx
+!models/sample_*.onnx
+
+# 데이터 디렉토리
+data/input/*
+data/output/*
+data/results/*
+data/backup/*
+
+# 데이터 디렉토리 구조는 유지
+!data/input/.gitkeep
+!data/output/.gitkeep
+!data/results/.gitkeep
+!data/backup/.gitkeep
+
+# 로그 파일
+logs/
+*.log.*
+
+# 임시 파일
+temp/
+tmp/
+*.tmp
+*.temp
+
+# 캐시 파일
+cache/
+.cache/
+
+# 설정 파일 (민감한 정보 포함 가능)
+config/local.properties
+config/production.properties
+src/main/resources/application-local.properties
+src/main/resources/application-prod.properties
+
+# 테스트 결과 파일
+test-output/
+test-results/
+*.test
+
+# 커버리지 리포트
+coverage/
+jacoco.exec
+
+# 프로파일링 결과
+*.jfr
+*.hprof
+
+# =================================================================
+# 빌드 및 배포 관련
+# =================================================================
+
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+.dockerignore.local
+
+# Kubernetes
+k8s/secrets/
+*.secret.yaml
+
+# 배포 스크립트 (환경별)
+deploy/local/
+deploy/dev/
+deploy/staging/
+scripts/deploy-*.sh
+
+# =================================================================
+# 문서 및 미디어 파일
+# =================================================================
+
+# 개발 중 테스트 이미지 (개인 데이터)
+test_images/
+sample_images/personal/
+
+# 문서 임시 파일
+*.docx#
+*.xlsx#
+*.pptx#
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# LaTeX 관련
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+
+# =================================================================
+# 보안 관련
+# =================================================================
+
+# 암호화 키
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+
+# 환경 변수 파일
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# API 키 및 시크릿
+secrets/
+api-keys.txt
+*.secret
+
+# =================================================================
+# 데이터베이스
+# =================================================================
+
+# H2 데이터베이스
+*.db
+*.mv.db
+*.trace.db
+
+# SQLite
+*.sqlite
+*.sqlite3
+
+# =================================================================
+# 의존성 관리
+# =================================================================
+
+# Node.js (프론트엔드 도구 사용시)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (스크립트 사용시)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =================================================================
+# 백업 및 임시 파일
+# =================================================================
+
+# 백업 파일
+*.bak
+*.backup
+*.old
+*.orig
+
+# Swap 파일
+*.swp
+*.swo
+*~
+
+# Vim 임시 파일
+.netrwhist
+
+# =================================================================
+# 성능 및 모니터링
+# =================================================================
+
+# JProfiler
+*.jprofiler
+
+# YourKit
+*.yk
+
+# JConsole
+jconsole.*
+
+# 성능 로그
+performance.log
+benchmark_results/
+
+# =================================================================
+# 실험 및 연구
+# =================================================================
+
+# 실험 데이터
+experiments/
+research/
+prototypes/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# =================================================================
+# 외부 라이브러리 및 도구
+# =================================================================
+
+# OpenCV 네이티브 라이브러리 (시스템별 별도 설치)
+lib/opencv/
+opencv_*.dll
+libopencv_*.so
+libopencv_*.dylib
+
+# CUDA 라이브러리 (시스템별)
+lib/cuda/
+*.cu
+*.cudafe*
+
+# =================================================================
+# 개발자 개인 설정
+# =================================================================
+
+# 개인 설정 파일
+.personal/
+personal_notes.md
+todo.md
+ideas.txt
+
+# 개발자별 스크립트
+scripts/personal/
+run_local_*.sh
+run_local_*.bat
+
+# =================================================================
+# 특수 상황
+# =================================================================
+
+# 대용량 테스트 데이터
+large_dataset/
+big_test_files/
+
+# 라이선스가 제한적인 파일
+proprietary/
+licensed_content/
+
+# 클라우드 설정
+.aws/
+.gcp/
+.azure/
+
+# =================================================================
+# 프로젝트별 예외 (필요시 주석 해제)
+# =================================================================
+
+# 작은 샘플 모델은 포함하고 싶은 경우
+# !models/sample_model_small.onnx
+
+# 특정 설정 파일은 포함하고 싶은 경우
+# !config/default.properties
+
+# 예시 이미지는 포함하고 싶은 경우
+# !sample_images/example_*.jpg
+
+# =================================================================
+# 끝
+# =================================================================
